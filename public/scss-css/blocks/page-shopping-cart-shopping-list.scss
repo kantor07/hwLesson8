@@ -1,0 +1,249 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+///mixin
+@mixin border-form () {
+    background-color: $main-color-white;
+    border: 1px solid #eaeaea;
+}
+
+@mixin border-form-hover-active () { 
+        background-color:  #eaeaea;
+        border: 1px solid $main-color-white;
+        box-shadow: $main-shadow;
+}
+
+@mixin fas-fa-star ($size:12px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48;
+}
+
+@mixin btn-cart-text ($color: #4a4a4a) {
+    font-size: $main-size-text;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $color;
+    text-decoration: none;
+}
+
+.shopping-cart-text-pink {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:$main-color-pink;
+    transform: translateX(500px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.header-shopping-list {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.indent {
+    margin-left: -38px;
+    padding-right: 300px;
+}
+
+.menu-shopping-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-header-list {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    color: #222222;
+    list-style-type: none;
+}
+
+.product-shopping-list {
+    margin-top: 22px;
+
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.arrivals-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.indent1 {
+    margin-left: 21px;
+    padding-right: 100px;
+}
+.img-cart-list {
+    width: 100px;
+    height: 115px;
+    margin-bottom: 25px;
+}
+
+.name-product-cart-list {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+}
+.shopping-cart-star {
+    @include fas-fa-star(13px);
+}
+
+.sort-favorite {
+    font-size: 13px;
+    line-height: 5px;
+    font-weight: 400;
+    color: #575757;
+}
+
+.sort-favorite1 {
+    font-weight: 300;
+    color: #6f6e6e;
+}
+
+.details-shopping-list {
+    margin-left: 180px;
+    width: 630px;
+}
+
+.menu-details-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-details-list {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #656565;
+}
+
+.product-quantity {
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 54px;
+    height: 33px;
+    @include border-form ();
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.span-quantity {
+    padding-right: 10px;
+}
+
+.btn-quantity-cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-quantity {
+    background-color: #fff;
+    font-size: 10px;
+}
+
+.span-delete-cart {
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.29;
+        background-color: $main-color-white;
+    }
+    &:active {
+        opacity: 0.29;
+        background-color: $main-color-white;
+    }
+}
+
+.manage-shopping-cart {
+    margin-top: 44px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-clear-cart {
+    width: 235px;
+    height: 50px;
+    @include border-form ();
+    @include btn-cart-text();
+    font-weight: 700;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $main-color-pink;
+        @include btn-cart-text ($main-color-white);
+        font-weight: 700;
+    }
+    &:active {
+        box-shadow: $main-shadow;
+        background-color: $main-color-pink;
+        @include btn-cart-text($main-color-white);
+        font-weight: 700;
+    }
+}
+
+.form-continue-shopping {
+    width: 225px;
+    height: 50px;
+    @include border-form ();
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $main-color-pink;
+    }
+    &:active {
+        box-shadow: $main-shadow;
+        background-color: $main-color-pink;
+    }
+
+    &:hover .continue-shopping {
+        color: $main-color-white;
+    }
+
+    &:active .continue-shopping {
+        color: $main-color-white;
+    }
+}
+
+.continue-shopping {
+   @include btn-cart-text();
+    font-weight: 800;
+    
+    transition: 0.5s;
+}

@@ -1,0 +1,124 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+///mixin
+@mixin fotter-socials-icon ($size:16px, $height:42px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: $height;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+@mixin border-form () {
+    background-color: $main-color-white;
+    border: 1px solid #eaeaea;
+}
+
+@mixin border-form-hover-active () { 
+        background-color:  #eaeaea;
+        border: 1px solid $main-color-white;
+        box-shadow: $main-shadow;
+}
+
+.slider-page {
+    background-color: #f7f7f7;
+}
+
+.slider-page-container {
+    height: 777px;
+}
+
+.pagination-single-page-left {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    &:hover {
+        @include border-form-hover-active ();
+    }
+
+    &:active {
+        @include border-form-hover-active ();
+    }
+
+    position: absolute;
+    left: 0;
+    margin-top: 365px;
+}
+
+.pagination-single-page-right {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    &:hover {
+        @include border-form-hover-active ();
+    }
+
+    &:active {
+        @include border-form-hover-active ();
+    }
+
+    position: absolute;
+    right: 0;
+    margin-top: 365px;
+}
+
+.chevron-single {
+    @include fotter-socials-icon (24px, 24px);
+    color: $main-color-white;
+}
+
+.img-slider {
+    margin-left: 284px;
+    width: 597px;
+    height: 724px;
+    
+}
+.featured-item {
+    margin-top: 119px;
+}
+.items-text {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+.featured-item-container {
+    margin-top: 119px;
+    min-height: 342px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fetured-item-single {
+    width: 261px;
+    height: 280px;
+    background-color: #e9e9e9;
+
+    &:hover {
+        box-shadow: $main-shadow;
+    }
+
+    &:active {
+        box-shadow: $main-shadow;
+    }
+}

@@ -1,0 +1,54 @@
+.footer-top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.company {
+  display: block;
+  margin-left: 23px;
+  margin-right: 97px;
+}
+
+.information {
+  display: block;
+  margin-right: 52px;
+}
+
+.footer-top-text {
+  margin-top: 29px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #898989;
+}
+
+.footer-text-pink {
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 9px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+  display: block;
+}
+
+.footer-menu {
+  list-style-type: none;
+}
+
+.footer-menu-link {
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #898989;
+  text-decoration: none;
+  display: block;
+}
+/*# sourceMappingURL=footer-top.css.map */

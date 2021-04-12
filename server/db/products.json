@@ -1,0 +1,67 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Blaze leggigs",
+    "price": 50,
+    "img_product": "img/single_page_product1.jpg",
+    "color": "red",
+    "size": "L"
+  },
+  {
+    "id_product": 2,
+    "product_name": "Alexa sweater",
+    "price": 60,
+    "img_product": "img/single_page_product2v1.jpg",
+    "color": "black",
+    "size": "M"
+  },
+  {
+    "id_product": 3,
+    "product_name": "Agnes top",
+    "price": 70,
+    "img_product": "img/single_page_product3.jpg",
+    "color": "green",
+    "size": "L"
+  },
+  {
+    "id_product": 4,
+    "product_name": "Sylva sweater",
+    "price": 30,
+    "img_product": "img/single_page_product4.jpg",
+    "color": "red",
+    "size": "M"
+  },
+  {
+    "id_product": 5,
+    "product_name": "Mango People T-shirt",
+    "price": 100,
+    "img_product": "img/fetured_items_product2.jpg",
+    "color": "orange",
+    "size": "S"
+  },
+  {
+    "id_product": 6,
+    "product_name": "Mango People T-shirt New",
+    "price": 110,
+    "img_product": "img/fetured_items_product4.jpg",
+    "color": "multi",
+    "size": "L"
+  },
+  {
+    "id_product": 7,
+    "product_name": "Sylva T-shirt",
+    "price": 150,
+    "img_product": "img/fetured_items_product5.jpg",
+    "color": "blue",
+    "size": "XL"
+  },
+  {
+    "id_product": 8,
+    "product_name": "Sylva sweater",
+    "price": 200,
+    "img_product": "img/fetured_items_product6.jpg",
+    "color": "black",
+    "size": "XLL"
+  }
+
+]

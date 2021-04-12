@@ -1,0 +1,54 @@
+///в начале файла или в отдельные папки
+
+///variables
+$main-color-pink: #f16d7f;
+$main-size-text: 14px;
+
+.footer-top-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.company {
+    display: block;
+    margin-left: 23px;
+    margin-right: 97px;
+}
+
+.information {
+    display: block;
+    margin-right: 52px;
+}
+
+.footer-top-text {
+    margin-top: 29px;
+    font-size: $main-size-text;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #898989;
+}
+
+.footer-text-pink {
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 9px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $main-color-pink;
+    display: block;
+}
+
+.footer-menu {
+    list-style-type: none;
+}
+
+.footer-menu-link {
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #898989;
+    text-decoration: none;
+    display: block;
+}
