@@ -1,0 +1,335 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+///mixin
+@mixin fotter-socials-icon ($size:16px, $height:42px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: $height;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+@mixin overlay-btn {
+    width: 123px;
+    height: 39px;
+    border: 1px solid $main-color-white;
+    background-color: #5a5858;
+}
+
+.main-arrivals {
+    margin-left: 50px;
+    height: 1644px;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*trending-now*/
+.filters-text {
+    font-size: $main-size-text;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.trending {
+    font-size: $main-size-text;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+    background-color: $main-color-white;
+    
+    &:hover {
+        color: #ef5b70;
+    }
+
+    &:active {
+        color: #ef5b70;
+    }
+}
+
+.trending-now {
+    max-width: 191px;
+}
+
+.trending-btn-span {
+    color: #dfdfdf; 
+}
+/*size*/
+.size {
+    margin-left: 100px;
+    max-width: 300px;
+}
+
+.size-text {
+    padding-left: 10px;
+    font-size: $main-size-text;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+/*price*/
+.price-text {
+    margin-left: 20px;
+}
+
+.filters-text-size {
+    padding-top: 21px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-filter {
+    width: 262px;
+    margin: 0px;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 21px;
+    padding-top: 21px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 51px;
+}
+
+.range-controls .scale {
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.range-controls .bar {
+    width: 124px;
+    height: 6px;
+    background-color: $main-color-pink;
+    margin-left: 31px;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: none;
+    padding: 0;
+    background-color: $main-color-pink;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 15%;
+}
+
+.range-controls .toggle-max {
+    left: 65%;
+}
+
+/*triage select name-products*/
+.triage {
+    margin-top: 41px;
+    max-width: 846px;
+    height: 50px;
+    background-color: #f3f3f3;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 9px;
+}
+
+.sort {
+    width: 153px;
+    height: 30px;
+    background-color: $main-color-white;
+    border: 1px solid #ebebeb;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.triage-text {
+    font-size: $main-size-text;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+}
+
+.show {
+    width: 119px;
+    height: 30px;
+    background-color: $main-color-white;
+    border: 1px solid #ebebeb;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.triage-select {
+    border: none;
+}
+
+/*section item-arrivals*/
+
+.item-arrivals-container {
+    margin-top: 48px;
+    padding-left: 10px;
+    min-height: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+  //   border: 1px solid red;
+}
+
+.fetured-items {
+    margin-top: -48px;  
+ //   border: 1px solid red;
+   
+}
+
+.name-product-arrivals {
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 2.0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.product-hover-btn {
+    margin-top: 8px;
+    width: 123px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.overlay-btn-product {
+    @include overlay-btn ();
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-btn {
+    width: 57px;
+    height: 38px;
+    border: 1px solid $main-color-white;
+    border-radius: 3px; 
+    background-color: #5a5858; 
+}
+
+.hover-span {
+    width: 22px;
+    height: 12px;
+    color: $main-color-white;
+}
+
+/*section arrivals-item-pagination*/
+.item-pagination-container {
+  //  margin-top: 43px;
+  //  height: 44px;
+   // max-width: 848px;
+    /* border: 1px solid red;*/
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-arrivals {
+    width: 261px;
+    height: 44px;
+    background-color: $main-color-white;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pagination-page {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #c4c4c4;
+    text-decoration: none;
+
+    &:hover {
+        color: #ef5b70;
+    }
+
+    &:active {
+        color: #ef5b70;
+    }
+
+}
+.chevron {
+    @include fotter-socials-icon (16.2px, 26px);
+    color: #aaaaaa;
+    
+    &:hover {
+        color: #ef5b70;
+    }
+
+    &:active {
+        color: #ef5b70;
+    }
+
+}
+
+.view-all {
+    width: 150px;
+    height: 44px;
+    background-color: $main-color-white;
+    border: 1px solid #ef5b70;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.5s;
+
+    &:hover {
+       box-shadow: $main-shadow;
+    }
+    &:active {
+        background-color:  #9f9f9f;
+        box-shadow: $main-shadow;
+    }
+
+}
+
+.href-view-all {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ef5b70;
+    text-decoration: none;
+}

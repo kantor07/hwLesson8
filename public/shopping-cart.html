@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND-Shopping-Cart</title>
+    <link rel="stylesheet" href="scss-css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b31c835f0d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container header-container">
+                <div class="header-logo">
+                    <a class="logo-link" href="#">
+                        <img class="logo-img" src="img/logo.png" alt="logo">
+                        BRAN<span class="pink">D</span>
+                    </a>
+                </div>
+                <section class="header-browse-search">
+                    <h2 class="hidden">section header browse search</h2>
+                    <section class="browse">
+                        <h2 class="hidden">section browse</h2>
+                        <block-header-browse></block-header-browse>
+                    </section> 
+                    <section class="header-search">
+                        <h2 class="hidden">section header search</h2> 
+                            <filter-el></filter-el>      
+                    </section>
+                </section> 
+                <section class="login">
+                    <h2 class="hidden">section login</h2>
+                    <div class="cart">
+                        <cart ref="cart"></cart>
+                    </div>
+                    <!--div class="header-href-cart">
+                        <button type="button" class="in-cart"><span class="in-cart-number">2</span></button>
+                    </div-->
+                </section>
+        </header>
+
+        <nav class="main-nav">
+            <block-main-nav></block-main-nav>
+        </nav>
+
+        <h1 class="hidden">Welcome to Brand shop Shopping Cart</h1>
+        <section class="arrivals">
+            <h2 class="hidden">section arrivals</h2>
+            <div class="container arrivals-container">
+                <h3 class="text-arrivals">Shopping cart</h3>
+            </div>
+        </section>
+
+        <main>
+            <section class="shopping-list">
+                <h2 class="hidden">section selected-product</h2>
+                <div class="container shopping-list-conrainer">                    
+                    <cart-shop ref="shoppingCart"></cart-shop>
+            </section>
+            <error ref="error"></error> 
+        </main>
+       <div class="feedback">
+            <block-feedback></block-feedback>
+        </div>
+        <footer class="footer">
+            <block-footer></block-footer>
+        </footer>
+
+    </div>   
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/AllPageHeaderComp.js"></script>
+    <script src="js/AllPageHeaderNavComp.js"></script>
+    <script src="js/AllPageFilterComp.js"></script>
+    <script src="js/ShoppingCartComp.js"></script>
+    <script src="js/AllPageFeedbackComp.js"></script>
+    <script src="js/AllPageFooterComp.js"></script>
+    <script src="js/AllPageErrorComp.js"></script>
+    <script src="js/AllPageCartComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+
+
+.sale-container {
+    margin-top: 100px;
+    height: 529px;
+    background-color: #222224;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.sale:hover .sale-text {
+        transform: scale(1.5) translateX(150px) translateY(100px);
+}
+
+.img-sale {
+    width: 767px;
+}
+
+.sale-text {
+    margin-top: -383px;
+    margin-left: 39px;
+    font-size: 53.7px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $main-color-white;
+
+    transition: 0.5s;
+}
+
+.pink-sale {
+    color: $main-color-pink;
+}
+
+.sale-text-link {
+    font-size: 32.2px;
+}
+
+/*info*/
+.info-img {
+    margin-top: 48px;
+    margin-bottom: 150px;
+}
+
+.info {
+    margin-top: 48px;
+    margin-bottom: 66px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-text {
+    display: block;
+    padding-right: 42px;
+}
+
+.info-menu {
+    padding-right: 33px;
+    
+    &:hover .img-info {
+        transform: scale(1.5) rotate(360deg);
+    }
+
+    &:hover .car {
+        animation-name: drive;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+.info-menu-link {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.info-menu-text {
+    padding-left: 78px;
+    font-size: $main-size-text;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+}
+
+.img-info {
+    width: 45px;
+    height: 32px;
+    transition: 1.2s;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(10px) translateY(-10px);
+    }
+    
+    100% {
+        transform: translateX(170px) translateY(-10px);
+    }
+
+}

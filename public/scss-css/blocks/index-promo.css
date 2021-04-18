@@ -1,0 +1,46 @@
+.promo {
+  background-color: #e8e8e8;
+}
+
+.promo-container {
+  min-height: 665px;
+  background-image: url(../img/promo-container.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.promo-slider {
+  padding-top: 224px;
+  padding-left: 230px;
+}
+
+.promo-rectangle {
+  padding-top: 13px;
+  float: left;
+}
+
+.promo-rectangle-img {
+  width: 12px;
+  height: 98px;
+}
+
+.promo-text {
+  padding-left: 24px;
+  width: 513px;
+}
+
+.promo-brand {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.promo-luxerious {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+}
+/*# sourceMappingURL=index-promo.css.map */

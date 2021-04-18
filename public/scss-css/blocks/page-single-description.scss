@@ -1,0 +1,232 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+///mixin
+@mixin fotter-socials-icon ($size:16px, $height:42px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: $height;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+@mixin border-form () {
+    background-color: $main-color-white;
+    border: 1px solid #eaeaea;
+}
+
+@mixin fas-fa-star ($size:12px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48;
+}
+
+@mixin quantity-text ($size:13px) {
+    font-size: $size;
+    line-height: 24px;
+    font-weight: 400;
+    color: #bcbcbc;
+}
+.description-container {
+    position: relative;
+    margin-top: -85px;
+    padding-top: 70px;
+    height: 730px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+
+}
+
+.description-product {
+    margin-left: 226px;
+    width: 642px;
+    text-align: center;
+    justify-content: center;
+}
+
+.border-decoration {
+    width: 147px;
+    height: 1px;
+}
+
+.name-collection {
+    font-size: $main-size-text ();
+    line-height: 0px;
+    font-weight: 700;
+    color: $main-color-pink;
+    display: inline-block;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.name-description-product {
+    margin: 0 auto;
+    padding-bottom: 24px;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.name-collection::after {
+    position: relative;
+    width: 63px;
+    margin-left: 40px;
+    margin-top: 19px;
+    content: "";
+    border-bottom: 3px solid #ef5b70;
+    display: block;
+}
+
+.describe-star {
+    @include fas-fa-star(19px);
+}
+.text-description-product {
+    padding-top: 14px;
+    font-size: $main-size-text ();
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+}
+
+.detail {
+    width: 642px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.detail-description-product {
+   margin-left: 100px;
+   width: 450px;
+}
+
+.detail-product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.detail-product li {
+    list-style-type: none;
+}
+
+.price-description-product {
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 0px;
+    font-weight: 700;
+    color: #ef5b70;
+}
+
+.detail-text {
+    font-size: $main-size-text ();
+    line-height: 0px;
+    font-weight: 700;
+    color: #b9b9b9;
+}
+
+.detail-text2 {
+    color: #2f2f2f;
+}
+
+.triage-product {
+    margin-left: 45px;
+    margin-top: 43px;
+    width: 537px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.triage-text-product {
+    font-size: $main-size-text ();
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f2f2f;
+}
+
+.triage-text1 {
+    padding-left: 15px;
+    @include quantity-text();
+}
+.triage-select-product::placeholder {
+    @include quantity-text(14px);
+}
+
+.triage-select-product {
+    width: 144px;
+    height: 35px;
+    @include border-form ();
+}
+
+.description-btn {
+    margin-top: 28px;
+    margin-bottom: 63px;
+    margin-left: 300px;
+    width: 537px;
+    height: 55px;
+    background-color: $main-color-white;
+    border: 1px solid #ef5b70;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $main-color-pink;
+    }
+    &:active {
+        background-color: $main-color-pink;
+    }
+
+    &:hover .description-btn-span {
+        color: $main-color-white;
+    }
+
+    &:active .description-btn-span {
+        color: $main-color-white;
+    }
+}
+.description-btn-span {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ef5b70;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.img-cart2 {
+    width: 26px;
+    height: 24px;
+}
+
+.slider-name-product {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: $main-size-text;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.slider-price-product {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $main-color-pink;
+}

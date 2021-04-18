@@ -1,0 +1,87 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+
+.sidenav-arrivals-container {
+    width: 243px;
+    height: 1644px;
+}
+
+.sidenav-list {
+    padding-bottom: 18px;
+}
+
+.sidenav-title {
+    padding: 11px;
+    height: 37px;
+    font-size: $main-size-text;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+    text-decoration: none;
+    border-left: 5px solid #ef5b70;
+    border-bottom: 1px solid #ebebeb;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav-title::after {
+    content: "";
+    margin-top: 8px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url(../img/close.png);
+    background-repeat: no-repeat;
+}
+
+details summary::-webkit-details-market {
+    display: none;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary {
+      outline-style: none;
+}
+
+details > summary {
+    list-style: none;
+}
+
+.sidenav-list[open] .sidenav-title::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url(../img/open.png);
+}
+
+.sidenav-list[open] .sidenav-title {
+    color: #ef5b70;
+}
+
+.sidenav-list-menu {
+    padding: 0;
+}
+
+.sidenav-list-menu li {
+    list-style-type: none;
+}
+
+.sidenav-menu-link {
+    padding-left: 19px;
+    font-size: $main-size-text;
+    line-height: 33px;
+    font-weight: 400;
+    color: #6f6e6e;
+    text-decoration: none;
+}

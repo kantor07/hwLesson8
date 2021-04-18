@@ -1,0 +1,154 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+///mixin
+@mixin fotter-socials-icon ($size:16px, $height:42px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: $height;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+@mixin border-form () {
+    background-color: $main-color-white;
+    border: 1px solid #eaeaea;
+}
+
+@mixin border-form-hover-active () { 
+        background-color:  #eaeaea;
+        border: 1px solid $main-color-white;
+        box-shadow: $main-shadow;
+}
+
+@mixin form-button-text ($size: 11px) {
+    font-size:$size;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+
+.hidden {
+    position: absolute;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+    /*вместо display: none;*/
+}
+
+.container {
+    width: $main-container-width;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+/*page-index*/
+/*header*/
+@import "blocks/header.scss";
+
+/*main nav*/
+@import "blocks/nav-main-menu.scss";
+
+/*main*/
+/*section promo*/
+@import "blocks/index-promo.scss";
+
+/*section  slider product*/
+@import "blocks/index-slider-product.scss";
+
+/*section  item*/
+@import "blocks/index-item.scss";
+
+/*section  sales*/
+@import "blocks/index-sale&info.scss";
+
+/*feedback*/
+.feedback {
+    background-color: rgba(242, 242, 242, 0.5);
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.feedback-container {
+    margin-top: 97px;
+    min-height: 438px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/*section reviews*/
+@import "blocks/feedback-reviews.scss";
+
+/*section subscribe*/
+@import "blocks/feedback-subscribe.scss";
+
+/*footer*/
+.footer {
+    margin-top: 109px;
+}
+
+/*footer-top*/
+@import "blocks/footer-top.scss";
+
+/*footer-bottom*/
+@import "blocks/footer-bottom.scss";
+
+/*page product*/
+/*arrivals*/
+@import "blocks/arrivals.scss";
+
+/*main*/
+.NewArrivals {
+    margin-top: 71px;
+    height: 1644px;
+
+    display: flex;
+    flex-direction: row;
+}
+/*sidenav-arrivals*/
+@import "blocks/page-product-sidenav.scss";
+
+/*section main*/
+@import "blocks/page-product-main.scss";
+
+/*section info*/
+@import "blocks/page-product-info.scss";
+
+/*page-single*/
+/*main*/
+/*section slider*/
+@import "blocks/page-single-slider.scss";
+
+/*section description*/
+@import "blocks/page-single-description.scss";
+
+/*page shopping-cart*/
+/*main*/
+/*section shopping-list*/
+@import "blocks/page-shopping-cart-shopping-list.scss";
+
+/*section order form buy*/
+@import "blocks/page-shopping-cart-order-form-buy.scss";
+
+/*page checkout*/
+/*main*/
+/*section shipping-adress*/
+@import "blocks/page-checkout-main.scss";

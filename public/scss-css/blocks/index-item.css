@@ -1,0 +1,207 @@
+.item-text {
+  margin-top: 100px;
+  height: 71px;
+  text-align: center;
+}
+
+.featured-container {
+  margin-top: 60px;
+  height: 971px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fetured-items {
+  margin-bottom: 39px;
+  width: 263px;
+  height: 364px;
+  background-color: #ffffff;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fetured-items:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.fetured-items:active {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.fetured-items:hover .overlay {
+  opacity: 0.8;
+}
+
+.fetured-items:hover .item-fas-fa-star {
+  opacity: 1;
+}
+
+.overlay {
+  width: 263px;
+  height: 281px;
+  background-color: rgba(58, 56, 56, 0.83);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 83px;
+  opacity: 0;
+}
+
+.overlay-btn-index {
+  width: 123px;
+  height: 39px;
+  border: 1px solid #ffffff;
+  background-color: #5a5858;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay-btn-img {
+  width: 23px;
+  height: 22px;
+}
+
+.overlay-btn-text {
+  margin-left: 8px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.fetured-items-text {
+  font-size: 30px;
+  line-height: 0;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #222222;
+}
+
+.featured-shop-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.name-product {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 13px;
+  line-height: 2.0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.price-product {
+  font-size: 16px;
+  color: #f16d7f;
+  line-height: 1.2;
+}
+
+.item-fas-fa-star {
+  position: absolute;
+  top: 324px;
+  left: 150px;
+  right: 10px;
+  opacity: 0;
+}
+
+.item-star {
+  font-family: FontAwesome;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e4af48;
+}
+
+.featured {
+  margin-top: 60px;
+  margin-left: 488px;
+  width: 212px;
+  height: 48px;
+  background-color: #f16d7f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.featured:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.featured:active {
+  background-color: #9f9f9f;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.href-items-all {
+  font-size: 16px;
+  line-height: 54px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  padding-left: 24px;
+  text-decoration: none;
+}
+
+.arrow-right {
+  margin-left: 9px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.click {
+  margin-left: 9px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+/*# sourceMappingURL=index-item.css.map */

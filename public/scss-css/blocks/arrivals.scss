@@ -1,0 +1,59 @@
+///в начале файла или в отдельные папки
+
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+
+.arrivals {
+    background-color: #f8f3f4;
+}
+
+.arrivals-container {
+    height: 148px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-arrivals {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $main-color-pink;
+}
+
+.menu-breadcrumbs {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.info-menu-breadcrumbs {
+    padding-left: 5px;
+    font-size: $main-size-text;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+    text-decoration: none;
+
+    &:hover {
+        font-weight: 700;
+        color: $main-color-pink;
+    }
+}
+
+.info-menu-breadcrumbs-pink {
+    padding-left: 5px;
+    font-size: $main-size-text;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $main-color-pink;
+    text-decoration: none;
+}

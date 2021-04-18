@@ -1,0 +1,200 @@
+///в начале файла или в отдельные папки
+///variables
+$main-color-pink: #f16d7f;
+$main-color-white: #ffffff;
+$main-size-text: 14px;
+$main-container-width:1143px;
+$main-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+
+///mixin
+@mixin fotter-socials-icon ($size:16px, $height:42px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: $height;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+@mixin fas-fa-star ($size:12px) {
+    font-family: FontAwesome;
+    font-size: $size;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48;
+}
+
+@mixin overlay-btn {
+    width: 123px;
+    height: 39px;
+    border: 1px solid $main-color-white;
+    background-color: #5a5858;
+}
+
+.item-text {
+    margin-top: 100px;
+    height: 71px;
+    text-align: center;
+}
+
+.featured-container {
+    margin-top: 60px;
+    height: 971px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fetured-items {
+    margin-bottom: 39px;
+    width: 263px;
+    height: 364px;
+    background-color: $main-color-white;
+    position: relative;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+    }
+
+    &:active {
+        box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+    }
+
+    &:hover .overlay {
+        opacity: 0.8;
+    }
+
+    &:hover .item-fas-fa-star {
+        opacity: 1;
+    }
+}
+.overlay {
+    width: 263px;
+    height: 281px;
+    background-color: rgba(58,56,56,0.83);
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 83px;
+    opacity: 0;
+}
+
+.overlay-btn-index {
+   @include overlay-btn();
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-btn-img {
+    width: 23px;
+    height: 22px;
+}
+
+.overlay-btn-text {
+    margin-left: 8px;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $main-color-white;
+}
+
+.fetured-items-text {
+    font-size: 30px;
+    line-height: 0;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.featured-shop-text {
+    font-size: $main-size-text;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+.name-product {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 2.0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.price-product {
+    font-size: 16px;
+    color: $main-color-pink;
+    line-height: 1.2;
+}
+
+.item-fas-fa-star {
+    position: absolute;
+    top: 324px;
+    left: 150px;
+    right: 10px;
+
+    opacity: 0;
+}
+
+.item-star {
+    @include fas-fa-star (15px);
+}
+
+.featured {
+    margin-top: 60px;
+    margin-left: 488px;
+    width: 212px;
+    height: 48px;
+    background-color: $main-color-pink;
+    transition: 0.5s;
+
+    &:hover {
+       box-shadow: $main-shadow;
+    }
+    &:active {
+        background-color:  #9f9f9f;
+        box-shadow: $main-shadow;
+    }
+
+}
+
+.href-items-all {
+    font-size: 16px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $main-color-white;
+    padding-left: 24px;
+    text-decoration: none;
+}
+
+.arrow-right {
+    margin-left: 9px;
+    font-family: FontAwesome;
+    font-size: 15px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: $main-color-white; 
+}
+
+.click {
+    margin-left: 9px;
+    @include fotter-socials-icon (15px, 54px);
+    color: $main-color-white;
+}

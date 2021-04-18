@@ -1,0 +1,171 @@
+.subscribe {
+  padding-bottom: 30px;
+  min-height: 438px;
+  width: 798px;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.subscribe-text {
+  margin-right: 94px;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-h2 {
+  padding-left: 100px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+.subscribe-text-message {
+  padding-left: 100px;
+  font-size: 14px;
+  line-height: 0px;
+  text-transform: none;
+}
+
+.message {
+  margin-left: 50px;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.message-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-field {
+  padding: 0px 10px 0px 28px;
+  width: 282px;
+  height: 46px;
+  background-color: #e1e1e1;
+  border-radius: 23px 0px 0px 23px;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+.message-field::-webkit-input-placeholder {
+  opacity: 0.67;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+.message-field:-ms-input-placeholder {
+  opacity: 0.67;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+.message-field::-ms-input-placeholder {
+  opacity: 0.67;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+.message-field::placeholder {
+  opacity: 0.67;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+.message-btn {
+  width: 104px;
+  height: 46px;
+  background-color: #f16d7f;
+  border-radius: 0px 23px 23px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.message-btn:hover {
+  background-color: #d6d6d6;
+  border: 1px solid #eaeaea;
+}
+
+.message-btn:active {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.message-btn:hover .message-btn-text {
+  color: #f16d7f;
+}
+
+.message-btn:active .message-btn-text {
+  color: #f16d7f;
+}
+
+.message-btn-text {
+  display: block;
+  font-size: 14px;
+  line-height: 44px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+/*# sourceMappingURL=feedback-subscribe.css.map */
